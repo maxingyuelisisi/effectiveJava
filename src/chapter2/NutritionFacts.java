@@ -41,6 +41,7 @@ public class NutritionFacts {
 			return new NutritionFacts(this);
 		}
 	}
+	//NutritionFacts设置值
 	private NutritionFacts(Builder builder){
 		name = builder.name;
 		price = builder.price;
@@ -52,6 +53,8 @@ public class NutritionFacts {
 	public String toString() {
 		return name+"\n"+price+"\n"+calories+"\n"+fat+"\n"+energy+"\n";
 	}
+	
+	//客户端代码
 	public static void main(String[] args){
 		NutritionFacts nf = new NutritionFacts.Builder("烤面筋", 20.1).fat(21).colaries(20).energy(30).build();
 		System.out.println(nf.toString());

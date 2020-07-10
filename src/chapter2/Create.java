@@ -1,5 +1,13 @@
 package chapter2;
 
+/**
+ * 
+ * @author blue
+ * @Description 重叠构造器模式
+ * @defect 当有许多参数的时候，客户端代码会很难编写，并且仍然较难以阅读
+ *
+ */
+
 public class Create {
 	private String name;
 	private char sex;
